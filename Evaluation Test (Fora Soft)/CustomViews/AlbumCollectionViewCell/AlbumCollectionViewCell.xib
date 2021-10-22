@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlbumCollectionViewCell" id="gTV-IL-0wX" customClass="AlbumCollectionViewCell" customModule="Evaluation_Test__Fora_Soft_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="157"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="157"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwY-SM-SXc" customClass="CardView" customModule="Evaluation_Test__Fora_Soft_" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="157"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bXV-sM-fxC">
+                                <rect key="frame" x="10" y="10" width="137" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="WZ5-Ha-Qvf"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9GP-3P-80N">
+                                <rect key="frame" x="157" y="10" width="160" height="137"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pD0-YH-JjK">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="34.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuq-ap-CGx">
+                                        <rect key="frame" x="0.0" y="34.5" width="160" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of tracks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVt-51-0BE">
+                                        <rect key="frame" x="0.0" y="68.5" width="160" height="34.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of release" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKM-gV-COl">
+                                        <rect key="frame" x="0.0" y="103" width="160" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9GP-3P-80N" firstAttribute="top" secondItem="UwY-SM-SXc" secondAttribute="top" constant="10" id="3QY-tm-Kb9"/>
+                            <constraint firstItem="bXV-sM-fxC" firstAttribute="top" secondItem="UwY-SM-SXc" secondAttribute="top" constant="10" id="8Tt-FL-3O7"/>
+                            <constraint firstAttribute="bottom" secondItem="9GP-3P-80N" secondAttribute="bottom" constant="10" id="AQN-gg-IHd"/>
+                            <constraint firstItem="9GP-3P-80N" firstAttribute="leading" secondItem="bXV-sM-fxC" secondAttribute="trailing" constant="10" id="FUR-wJ-cQ4"/>
+                            <constraint firstAttribute="bottom" secondItem="bXV-sM-fxC" secondAttribute="bottom" constant="10" id="Vpf-TC-TEK"/>
+                            <constraint firstItem="bXV-sM-fxC" firstAttribute="leading" secondItem="UwY-SM-SXc" secondAttribute="leading" constant="10" id="ef2-dZ-S0a"/>
+                            <constraint firstAttribute="trailing" secondItem="9GP-3P-80N" secondAttribute="trailing" constant="10" id="mA9-fr-4x9"/>
+                            <constraint firstAttribute="width" constant="327" id="vXa-vZ-dEA"/>
+                            <constraint firstAttribute="height" constant="157" id="wTb-p7-bxF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="UwY-SM-SXc" secondAttribute="bottom" id="ENt-dh-Ypg"/>
+                <constraint firstItem="UwY-SM-SXc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Gfe-vX-nqN"/>
+                <constraint firstAttribute="trailing" secondItem="UwY-SM-SXc" secondAttribute="trailing" id="igN-0l-2sE"/>
+                <constraint firstItem="UwY-SM-SXc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nxH-Zy-myL"/>
+            </constraints>
+            <size key="customSize" width="327" height="157"/>
+            <connections>
+                <outlet property="albumImage" destination="bXV-sM-fxC" id="CPS-ra-Yyj"/>
+                <outlet property="albumNameLabel" destination="pD0-YH-JjK" id="frR-aS-0iJ"/>
+                <outlet property="artistNameLabel" destination="xuq-ap-CGx" id="20p-6E-X31"/>
+                <outlet property="dateOfRelease" destination="mKM-gV-COl" id="IKq-4L-NY6"/>
+                <outlet property="numberOfTracksLabel" destination="PVt-51-0BE" id="NPh-eB-z8f"/>
+            </connections>
+            <point key="canvasLocation" x="294.92753623188406" y="138.95089285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
