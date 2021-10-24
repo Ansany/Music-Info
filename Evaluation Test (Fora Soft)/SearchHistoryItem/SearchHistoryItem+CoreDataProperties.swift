@@ -17,6 +17,7 @@ extension SearchHistoryItem {
     }
 
     @NSManaged public var name: String?
+    @NSManaged public var collectionId: String?
 
 }
 

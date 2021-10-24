@@ -20,6 +20,7 @@ struct Result: Codable {
     let releaseDate: String
     let artworkUrl100: String
     let trackName: String?
+    let collectionId: Int
     
 }
 

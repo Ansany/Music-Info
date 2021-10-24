@@ -11,6 +11,9 @@ class HistoryViewController: UIViewController {
 
     @IBOutlet weak var historyTableView: UITableView!
     
+    var netWorkService = NetworkService()
+    var searchVC = SearchViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,7 +21,7 @@ class HistoryViewController: UIViewController {
         registerCells()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         historyTableView.reloadData()
         registerCells()
     }
@@ -26,6 +29,7 @@ class HistoryViewController: UIViewController {
     private func registerCells() {
         historyTableView.register(UINib(nibName: HistoryTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: HistoryTableViewCell.identifier)
     }
+    
 }
 
 //MARK: - UITableViewDelegate, UITableViewDataSource
@@ -43,9 +47,31 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let controller = AlbumDetailViewController.instantiate()
-//
-//        navigationController?.pushViewController(controller, animated: true)
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let controller = AlbumDetailViewController.instantiate()
+        for item in SearchViewController.albumsForHistory {
+            let colId = "\(item.collectionId)"
+            if colId == SearchViewController.searchHistory[indexPath.row].collectionId {
+                controller.albums = Result(artistName: item.artistName, collectionName: item.collectionName, trackCount: item.trackCount, releaseDate: item.releaseDate, artworkUrl100: item.artworkUrl100, trackName: nil, collectionId: item.collectionId)
+            } 
+        }
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            historyTableView.beginUpdates()
+            if SearchViewController.searchHistory.count == 1 {
+                searchVC.removeHistoryItem(item: SearchViewController.searchHistory[indexPath.row])
+            } else {
+                searchVC.removeHistoryItem(item: SearchViewController.searchHistory[indexPath.row - 1])
+            }
+            historyTableView.deleteRows(at: [indexPath], with: .fade)
+            historyTableView.endUpdates()
+        }
+    }
 }

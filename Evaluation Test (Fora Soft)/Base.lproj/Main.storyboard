@@ -26,7 +26,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0C2-vH-A27" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1533" y="269"/>
+            <point key="canvasLocation" x="-1913" y="-33"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xo4-PR-XyQ">
@@ -44,7 +44,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEz-A1-iqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1126" y="-459"/>
+            <point key="canvasLocation" x="-2968" y="269"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="T27-Bf-aB6">
@@ -61,7 +61,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWj-Kz-d6Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-717" y="269"/>
+            <point key="canvasLocation" x="-1913" y="696"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -76,13 +76,13 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="20" minimumInteritemSpacing="10" id="anW-qT-nNa">
                                     <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="20" maxX="0.0" maxY="20"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCellIdentifier" id="oWU-tO-aEV">
-                                        <rect key="frame" x="0.0" y="70" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="20" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GXW-Gf-WZP">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -90,29 +90,6 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="SearchBar" id="Eye-eJ-tkk" customClass="SearchBarView" customModule="Evaluation_Test__Fora_Soft_" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="l25-af-WhQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
-                                            <connections>
-                                                <outlet property="delegate" destination="BYZ-38-t0r" id="0oR-bN-e72"/>
-                                            </connections>
-                                        </searchBar>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstItem="l25-af-WhQ" firstAttribute="top" secondItem="Eye-eJ-tkk" secondAttribute="top" id="0mN-TZ-MIb"/>
-                                        <constraint firstAttribute="trailing" secondItem="l25-af-WhQ" secondAttribute="trailing" id="6Qd-Ub-Af0"/>
-                                        <constraint firstAttribute="bottom" secondItem="l25-af-WhQ" secondAttribute="bottom" id="CNd-OO-woZ"/>
-                                        <constraint firstItem="l25-af-WhQ" firstAttribute="leading" secondItem="Eye-eJ-tkk" secondAttribute="leading" id="Mjb-O6-1CW"/>
-                                    </constraints>
-                                    <connections>
-                                        <outlet property="searchBar" destination="l25-af-WhQ" id="Qim-Ge-a0M"/>
-                                    </connections>
-                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="l3b-lf-FCK"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="GwF-fC-hlZ"/>
@@ -135,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1533.3333333333335" y="981.69642857142856"/>
+            <point key="canvasLocation" x="-1106" y="-33"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="3vp-SU-0ah">
@@ -173,14 +150,16 @@
                             <constraint firstItem="elc-Fm-g0X" firstAttribute="trailing" secondItem="mc0-R4-oF6" secondAttribute="trailing" id="gc5-4D-qbJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Clw-ru-eKx"/>
+                    <navigationItem key="navigationItem" id="Clw-ru-eKx">
+                        <nil key="title"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="historyTableView" destination="mc0-R4-oF6" id="sgw-cg-dTe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JaP-5E-Gbk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-717" y="982"/>
+            <point key="canvasLocation" x="-1107.2463768115942" y="695.75892857142856"/>
         </scene>
         <!--Album Detail View Controller-->
         <scene sceneID="fAm-Wf-jp9">
@@ -294,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUv-A9-1D9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1105.7971014492755" y="1677.4553571428571"/>
+            <point key="canvasLocation" x="-270" y="269"/>
         </scene>
     </scenes>
     <resources>

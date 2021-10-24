@@ -45,7 +45,6 @@ class AlbumDetailViewController: UIViewController {
     private func registerCells() {
         albumDetailTableView.register(UINib(nibName: AlbumDetailTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: AlbumDetailTableViewCell.identifier)
     }
-    
 }
 
 //MARK: - NetworkServiceDelegate

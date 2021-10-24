@@ -23,7 +23,6 @@
 		04CDAEE22720290600A339B1 /* AlbumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDAEE12720290600A339B1 /* AlbumData.swift */; };
 		04CDAEEA2720C34E00A339B1 /* UIImageView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDAEE92720C34E00A339B1 /* UIImageView+Extention.swift */; };
 		04CDAEEE2720CC9F00A339B1 /* String+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDAEED2720CC9F00A339B1 /* String+Extention.swift */; };
-		04CDAEF02721872F00A339B1 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDAEEF2721872F00A339B1 /* SearchBarView.swift */; };
 		04CDAEF427221E9C00A339B1 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDAEF227221E9C00A339B1 /* HistoryTableViewCell.swift */; };
 		04CDAEF527221E9C00A339B1 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CDAEF327221E9C00A339B1 /* HistoryTableViewCell.xib */; };
 		04CDAEF727222D5900A339B1 /* UIViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDAEF627222D5900A339B1 /* UIViewController+Extention.swift */; };
@@ -52,7 +51,6 @@
 		04CDAEE12720290600A339B1 /* AlbumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumData.swift; sourceTree = "<group>"; };
 		04CDAEE92720C34E00A339B1 /* UIImageView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extention.swift"; sourceTree = "<group>"; };
 		04CDAEED2720CC9F00A339B1 /* String+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extention.swift"; sourceTree = "<group>"; };
-		04CDAEEF2721872F00A339B1 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		04CDAEF227221E9C00A339B1 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		04CDAEF327221E9C00A339B1 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		04CDAEF627222D5900A339B1 /* UIViewController+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extention.swift"; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				04150580271F8608001AA01B /* SearchViewController.swift */,
-				04CDAEEF2721872F00A339B1 /* SearchBarView.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -316,7 +313,6 @@
 				04150587271F8608001AA01B /* Evaluation_Test__Fora_Soft_.xcdatamodeld in Sources */,
 				0415059D271F87C2001AA01B /* AlbumDetailViewController.swift in Sources */,
 				041505A4271F8F8E001AA01B /* CardView.swift in Sources */,
-				04CDAEF02721872F00A339B1 /* SearchBarView.swift in Sources */,
 				04CDAEDE2720251200A339B1 /* NetworkService.swift in Sources */,
 				04CDAEEA2720C34E00A339B1 /* UIImageView+Extention.swift in Sources */,
 				041505A0271F8818001AA01B /* AlbumCollectionViewCell.swift in Sources */,
@@ -474,7 +470,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ansan.Evaluation-Test--Fora-Soft-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ansan.Music-Info";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -494,7 +490,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ansan.Evaluation-Test--Fora-Soft-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ansan.Music-Info";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
