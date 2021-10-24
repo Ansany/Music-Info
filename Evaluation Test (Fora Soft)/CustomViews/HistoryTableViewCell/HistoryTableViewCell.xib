@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,10 +33,16 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="searchVCbackground"/>
             <connections>
                 <outlet property="historyLabel" destination="mDZ-ID-XCZ" id="kN5-lz-7Uj"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="84.040178571428569"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <namedColor name="searchVCbackground">
+            <color red="0.93491185039531832" green="0.9556335324172206" blue="0.96482402146464641" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
 </document>
